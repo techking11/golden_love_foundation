@@ -1,0 +1,118 @@
+    @media only screen and (max-width:768px) {
+        /* phone no of connection with brand part */
+        .org-phone {
+            margin-right: 30px;
+        }
+        /* logo of brand */
+        .navbar-brand {
+            margin-bottom: 70px;
+        }
+        .navbar-brand > img {
+            width: 300px;
+            height: auto;
+            position: absolute;
+            top: -10px;
+        }
+        /* contact of brand */
+        .contact {
+            position: absolute;
+            right: 8%;
+            margin: 0px;
+            padding: 0px;
+        }
+        .contact-button-icon {
+            margin: 0px;
+        }
+        .contact-input-item {
+            width: 150px;
+            margin-left: 3x;
+            display: block;
+            border: none;
+        }
+    }
+    @media only screen and (max-width:575px) {
+        /* Body Part Margin and Padding for view */
+        body {
+            overflow-x: hidden;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        .contact-input-item {
+            width: 150px;
+            margin-left: 3x;
+            display: block;
+            border: none;
+        }
+    }
+    @media only screen and (max-width:1199px) {
+        .owlcaro-caption {
+            margin-left: 20px;
+            width: 600px;
+            height: 250px;
+            font-size: 15px;
+        }
+    }
+    @media only screen and (max-width:991px) {
+        .hero-owlcaro {
+            width: 100%;
+            height: 400px;
+        }
+        .owlcaro-caption {
+            width: 400px;
+            height: 250px;
+            line-height: 20px;
+            padding: 10px;
+            margin-left: 50px;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .carousel-header::after {
+            width: 30px;
+            margin-left: 10px;
+        }
+        .carousel-header::before {
+            width: 30px;
+            margin-right: 10px;
+        }
+    }
+    @media only screen and (max-width:767px) {
+        .owlcaro-caption {
+            width: 300px;
+            height: 250px;
+            line-height: 20px;
+            padding: 10px;
+            margin-left: 50px;
+            font-size: 12px;
+            margin-bottom: 20px;
+        }
+        .contact-input-item {
+            display: none;
+        }
+        .line-bottom {
+            border-bottom: 2px solid gainsboro;
+            padding-bottom: 30px;
+        }
+        .line-bottom:last-child {
+            border-bottom: 0px;
+        }
+        .pre-icon,
+        .next-icon {
+            width: 0px;
+            height: 0px;
+            border-radius: 50%;
+            border: 0px solid orangered;
+            position: relative;
+        }
+        .pre-ico,
+        .next-ico {
+            position: absolute;
+            top: 0%;
+            left: 0%;
+        }
+    }
+    @media only screen and (max-width:415px) {
+        .carousel-caption {
+            display: none;
+        }
+    }
+    error

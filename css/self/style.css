@@ -1,0 +1,506 @@
+/*-------- For all contents summarizing codes ------------------------------ */
+
+* {
+    box-sizing: border-box;
+}
+html {
+    background-color: #fff;
+    color: black;
+    font-family: geogria, serif;
+    font-size: 100%;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-family: geogria, serif;
+    font-size: 16px;
+}
+
+/*---------- Reuseable Contents --------------*/
+
+.form-control:focus {
+    border-color: rgba(255, 69, 0, 0.56);
+    outline: 0;
+    box-shadow: 0 0 0 0;
+}
+a {
+    font-family: pyidaungsu, sans-serif;
+}
+.btn {
+    background-color: orangered;
+    color: black;
+}
+.leader {
+    color: darkred;
+}
+.leader::after {
+    content: "";
+    clear: both;
+    display: block;
+    width: 100px;
+    height: 5px;
+    background-color: orangered;
+    margin-top: 13px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: orangered;
+}
+.paragraph-header {
+    color: orangered;
+}
+.input-margin-padding {
+    height: 45px;
+}
+.mission {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../img/need/one.jpg);
+    width: 100%;
+    height: 400px;
+    color: ghostwhite;
+    background-size: cover;
+}
+.list-org {
+    background-color: ghostwhite;
+}
+
+/*---------- /. Reuseable Contents 
+-----------------------------------------------------------------------------*/
+
+
+/*------ Navigation Part of header --------*/
+
+
+/*-------- Connection with brand --------- */
+
+.nav1-bg {
+    background-color: gainsboro;
+    height: 50px;
+}
+.org-phone {
+    margin-right: 150px;
+}
+.eng-trans {
+    color: black;
+    vertical-align: middle;
+}
+.myan-trans {
+    color: orangered;
+    vertical-align: middle;
+}
+.org-phone,
+.eng-trans,
+.myan-trans {
+    background-color: transparent;
+    font-size: 100%;
+}
+
+/* ------ Brand About ---------------- */
+
+.brand {
+    margin-bottom: 45px;
+}
+.logo {
+    position: relative;
+}
+.navbar-brand > img {
+    width: 400px;
+    height: auto;
+    position: absolute;
+    top: -60px;
+    z-index: 9999;
+}
+.contact {
+    position: absolute;
+    right: 20%;
+    top: 100%;
+}
+.contact-button-icon {
+    border: none;
+    background-color: rgba(255, 69, 0, 0.71);
+    z-index: 9999;
+}
+.contact-button-icon a {
+    color: white;
+    background-color: orangered;
+}
+.contact-input-item {
+    z-index: 9999;
+}
+.search {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 5px;
+}
+.search i {
+    text-align: center;
+    vertical-align: middle;
+    color: gray;
+}
+
+/* -------- Main Navigations ------------ */
+
+.main {
+    background-color: rgba(227, 70, 6, 0.92);
+}
+.main a {
+    color: white;
+    z-index: 9999;
+    letter-spacing: 2px;
+    margin-right: 30px;
+}
+.navigation {
+    flex-wrap: wrap;
+}
+.navigation li a:hover {
+    color: black;
+    transition: all 0.2s linear;
+}
+.connection .nav-item {
+    border-right: 2px solid orangered;
+}
+.dropdown-menu {
+    background-color: rgba(227, 70, 6, 0.92);
+    border-top: 2px outset orangered;
+}
+.dropdown-menu .dropdown-item:first-child {
+    border-top: 0px;
+}
+.dropdown-menu .dropdown-item {
+    background-color: rgba(227, 70, 6, 0.92);
+    border-top: 1px solid rgba(255, 69, 0, 0.74);
+    display: block;
+}
+.dropdown-menu .dropdown-item a {
+    color: gainsboro;
+    background-color: rgba(227, 70, 6, 0.92);
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+}
+
+/*------ /. Navigation Part of header 
+--------------------------------------------------------------------------------*/
+
+
+/* --------- Hero Full Slides Show ------------*/
+
+.hero-owlcaro {
+    width: 100%;
+    height: 465px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.hero-owlcaro img {
+    object-fit: cover;
+}
+.hero-owlcaro-bgimg-one {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/need/aim.jpg);
+}
+.hero-owlcaro-bgimg-two {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/need/news4.jpg);
+}
+.hero-owlcaro-bgimg-three {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/need/news10.jpg);
+}
+.hero-owlcaro-bgimg-four {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/need/news5.jpg);
+}
+.owlcaro-caption {
+    width: 700px;
+    height: 230px;
+    line-height: 30px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top: 5px solid orangered;
+    border-bottom: 1px solid orangered;
+    margin-bottom: 30px;
+    margin-left: 100px;
+}
+.carousel-header::after,
+.section-title::after {
+    content: "";
+    clear: both;
+    display: inline-block;
+    width: 100px;
+    height: 2px;
+    background-color: orangered;
+    margin-left: 10px;
+}
+.carousel-header::before {
+    content: "";
+    clear: both;
+    display: inline-block;
+    width: 100px;
+    height: 2px;
+    background-color: orangered;
+    margin-right: 10px;
+}
+.pre-icon,
+.next-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid orangered;
+    position: relative;
+}
+.pre-ico,
+.next-ico {
+    position: absolute;
+    top: 25%;
+    left: 27%;
+}
+
+/* --------- /. Hero Full Slides Show ------------*/
+
+
+/*---------------- All Body Contents --------------- */
+
+
+/* --------- All header pages with breadcrumb
+* ---------- Path of web page header ---------*/
+
+.header {
+    position: relative;
+    top: 35%;
+    left: 20%;
+    padding: 5px;
+}
+.mgn-header {
+    color: gainsboro;
+}
+.breadcrumb-main {
+    background-color: transparent;
+    color: gray;
+}
+.breadcrumb-foot {
+    color: orangered;
+}
+
+/*------- History of organization ---------------- */
+
+#org-history {
+    text-indent: 80px;
+    line-height: 30px;
+    text-align: justify;
+    font-size: 16px;
+    text-shadow: 2px 2px 2px white;
+}
+
+/* ---------- Member Form of org ---------------- */
+
+.logo {
+    width: 40%;
+    height: auto;
+}
+.logo1 {
+    width: 40%;
+    margin-left: 30%;
+}
+.profile {
+    width: 40%;
+    height: auto;
+    margin-left: 30%;
+}
+.member::after {
+    content: "";
+    display: block;
+    clear: both;
+    width: 100%;
+    border-radius: 300px;
+    margin-top: 30px;
+    height: 5px;
+    background-color: gainsboro;
+}
+.org-name {
+    font-size: 150%;
+    line-height: 40px;
+}
+
+/* ---------- News Page of org -------------*/
+
+.news {
+    padding-left: 0px;
+    padding-bottom: 10px;
+}
+.news-box {
+    padding-left: 0px;
+}
+.news a,
+.news-header {
+    color: black;
+}
+#org-history {
+    font-size: 16px;
+    text-indent: 60px;
+}
+.btn-live {
+    background-color: orangered;
+    border: none;
+    color: white;
+}
+.interviews-section {
+    background-color: ghostwhite;
+}
+
+/* ----------------  Images Gallery  -------------- */
+
+.gallery,
+.carosel-section {
+    background-color: ghostwhite;
+}
+.gallery-box {
+    position: relative;
+    width: 100%;
+    padding: 5px;
+}
+.gallery-item {
+    overflow: hidden;
+    position: relative;
+}
+.gallery-item img {
+    transition: all ease-in-out 0.4s;
+    transform: scale(1);
+}
+.gallery-item:hover img {
+    transform: scale(1.1);
+    opacity: 1;
+}
+.readmore {
+    position: absolute;
+    bottom: 18.5%;
+    left: 0%;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+    z-index: 0;
+}
+.gallery-item:hover .readmore {
+    opacity: 1;
+}
+.show-more {
+    margin-left: 40%;
+    margin-top: 3%;
+}
+
+/* ----- /. All Body Contents 
+--------------------------------------------------------------------------- */
+
+
+/* ------ All footer Contents -------------- */
+
+
+/* ------ Social icon of footer ------------ */
+
+.footer,
+.footer a {
+    width: 100%;
+    background-color: black;
+    font-family: geogria, serif;
+    color: gray;
+    text-decoration: none;
+    transition: 0.2s linear;
+    font-size: 14px;
+}
+.head {
+    padding-top: 20px;
+}
+
+/* --------------- foot body of footer ----------- */
+
+.foot-link a {
+    color: ghostwhite;
+}
+.footer h3 {
+    padding-bottom: 10px;
+}
+.footer input {
+    background-color: black;
+}
+.footer input:focus {
+    background-color: transparent;
+}
+
+/* ------------------- footer Part --------------- */
+
+.foot {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.19);
+    border-top: 1px solid gray;
+    margin-top: 20px;
+}
+.foot-icon li i {
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    background-color: rgba(128, 128, 128, 0.15);
+    color: white;
+    transition: all 0.2s linear;
+    font-size: 20px;
+}
+.foot-icon li i:hover {
+    background-color: orangered;
+    color: white;
+    border-color: transparent;
+}
+.footer-links a:hover {
+    color: orangered;
+}
+.footer-links li {
+    line-height: 25px;
+}
+.foot a {
+    color: orangered;
+}
+.btn-subscribe {
+    background-color: transparent;
+    border: 1px solid gray;
+}
+.btn-subscribe:hover {
+    background-color: orangered;
+    color: white;
+    border-color: transparent;
+}
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 1%;
+    bottom: 1%;
+    z-index: 995;
+    background-color: transparent;
+}
+.back-to-top i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+    color: orangered;
+    transition: all 0.4s;
+    border: 2px solid orangered;
+}
+.back-to-top i:hover {
+    background-color: orangered;
+    color: #fff;
+}
+#b-to-p a {
+    text-decoration: none;
+}
+
+/* ------ /. All footer Contents 
+--------------------------------------------------------------------------- */
